@@ -110,41 +110,6 @@
   </div>
   </div>
 
-  <!-- Research Highlight -->
-  <div class="container" id="research-highlight">
-    <div class="full-project-divider2"><hr /></div>
-    <p class="section-heading">Research Highlight</p>
-    <div class="pubs-box key-pubs">
-      <div class="pubs-image">
-        <img src="./images/accident.png" alt="Conditional transformer for accident-aware traffic forecasting" />
-      </div>
-      <div class="pubs-data">
-        <p class="title">
-          Towards Resilient Transportation: A Conditional Transformer for Accident-Informed Traffic Forecasting
-        </p>
-        <p class="authors">
-          Hongjun Wang, Jiawei Yong, Jiawei Wang, Shintaro Fukushima, Renhe Jiang
-        </p>
-        <p>
-          <span class="venue">SIGKDD 2026 Research Track (Accepted, Nov 2025 release)</span>
-          <span class="links">
-            <a href="https://openreview.net/forum?id=1000" target="_blank">OpenReview thread</a> |
-            <a href="https://openreview.net/pdf?id=1000" target="_blank">Download PDF</a>
-          </span>
-        </p>
-        <p class="summary">
-          We introduce ConFormer, a conditional transformer that fuses graph propagation with Guided Layer Normalization to dynamically adjust spatial-temporal relationships under incidents. The model ingests two enriched traffic datasets from Tokyo and California that align sensor feeds with accident and regulation records, enabling incident-aware forecasting.
-        </p>
-        <p class="summary">
-          <strong>Highlights.</strong> GLN modulates normalization, attention logits, and residuals with graph-diffused incident cues, leading to state-of-the-art accuracy while using fewer parameters than STAEFormer. Extensive ablations cover GLN vs. FiLM, feature-only vs. architecture-only gains, multi-incident robustness, sparsity stress tests, and cross-region transfer between Bay Area &lt;-&gt; San Diego as well as Tokyo urban &lt;-&gt; suburban deployments.
-        </p>
-        <p class="summary">
-          <strong>Review snapshot.</strong> Program Chairs issued an Accept decision after consistent positive scores (Novelty 2/4/3, Technical 3/3/3). Reviewer concerns on dataset alignment, statistical rigor, and scalability were resolved with multi-seed significance tests, detailed spatiotemporal join protocols, linear-attention baselines, and added sensitivity visualizations.
-        </p>
-      </div>
-    </div>
-  </div>
-
   <!-- Internships Section -->
   <div class="container" id="interns">
     <div class="full-project-divider2"><hr /></div>
@@ -164,6 +129,29 @@
     <p class="section-heading">Publications</p>
     
     <h5>2026</h5>
+    <div class="pubs-box key-pubs">
+      <div class="pubs-image">
+        <img src="./images/accident.png" alt="Conditional transformer for accident-aware traffic forecasting" />
+      </div>
+      <div class="pubs-data">
+        <p class="title">
+          Towards Resilient Transportation: A Conditional Transformer for Accident-Informed Traffic Forecasting
+        </p>
+        <p class="authors">
+          Hongjun Wang, Jiawei Yong, Jiawei Wang, Shintaro Fukushima, Renhe Jiang
+        </p>
+        <p>
+          <span class="venue">SIGKDD 2026 Research Track (Accepted)</span>
+          <span class="links">
+            <a href="https://openreview.net/forum?id=1000" target="_blank">OpenReview thread</a> |
+            <a href="https://openreview.net/pdf?id=1000" target="_blank">Download PDF</a>
+          </span>
+        </p>
+        <p class="summary">
+          ConFormer fuses graph propagation with Guided Layer Normalization so that self-attention adapts to traffic incidents in Tokyo and California datasets enriched with accident and regulation records. GLN injects graph-diffused incident cues into normalization, attention logits, and residuals, yielding state-of-the-art accuracy with fewer parameters than STAEFormer.
+        </p>
+      </div>
+    </div>
     <div class="pubs-box">
       <div class="pubs-image">
         <img src="./images/resilience.png"/>
