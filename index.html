@@ -96,7 +96,7 @@
           <strong>Research Summary.</strong> My research focuses on developing advanced machine learning models for spatiotemporal data analysis, particularly in urban computing and transportation systems. I have contributed to several key areas:
           <ol>
             <li> 
-              <strong>Spatiotemporal Graph Neural Networks and Urban Computing.</strong> I developed <a href="https://arxiv.org/abs/2410.00385">STGformer</a>, an efficient spatiotemporal graph transformer for traffic forecasting, and work on evaluating generalization ability across different urban environments. I also contributed to <a href="https://ieeexplore.ieee.org/document/9829726">GOF-TTE</a>, a generative online federated learning framework for travel time estimation, and work on multi-task weakly supervised learning approaches. I work on supply chain resilience inference using hypergraph neural networks. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11084960">[IEEE TMC 2025]</a> <a href="https://ieeexplore.ieee.org/abstract/document/10025822">[IEEE TKDE 2022]</a> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25590">[AAAI 2023]</a> <a href="#">[AAAI 2026]</a>
+              <strong>Spatiotemporal Graph Neural Networks and Urban Computing.</strong> I developed <a href="https://arxiv.org/abs/2410.00385">STGformer</a>, an efficient spatiotemporal graph transformer for traffic forecasting, and work on evaluating generalization ability across different urban environments. I also led <a href="https://openreview.net/forum?id=1000">Towards Resilient Transportation</a>, a conditional transformer for accident-aware forecasting accepted to <strong>KDD 2026</strong>, where Guided Layer Normalization improves robustness under incidents. Beyond these works, I contributed to <a href="https://ieeexplore.ieee.org/document/9829726">GOF-TTE</a>, a generative online federated learning framework for travel time estimation, and developed multi-task weakly supervised learning approaches. I work on supply chain resilience inference using hypergraph neural networks. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11084960">[IEEE TMC 2025]</a> <a href="https://ieeexplore.ieee.org/abstract/document/10025822">[IEEE TKDE 2022]</a> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25590">[AAAI 2023]</a> <a href="#">[AAAI 2026]</a>
             </li>
             <li>
               <strong>Computer Vision and Causal Analysis.</strong> I developed novel approaches for image super-resolution and generalizable computer vision models, and work on causal-based supervision of attention mechanisms in graph neural networks. I also work on post-training quantization for high-fidelity image super-resolution. <a href="https://arxiv.org/pdf/2402.18929.pdf">[CVPR 2024]</a> <a href="https://iccv.thecvf.com/virtual/2025/poster/491">[ICCV 2025]</a> <a href="https://arxiv.org/pdf/2305.13115.pdf">[IJCAI 2023]</a> <a href="https://ieeexplore.ieee.org/document/10046397">[IEEE T-ITS 2023]</a> <a href="#">[AAAI 2026]</a>
@@ -106,6 +106,41 @@
             </li>
           </ol>
         </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Research Highlight -->
+  <div class="container" id="research-highlight">
+    <div class="full-project-divider2"><hr /></div>
+    <p class="section-heading">Research Highlight</p>
+    <div class="pubs-box key-pubs">
+      <div class="pubs-image">
+        <img src="./images/accident.png" alt="Conditional transformer for accident-aware traffic forecasting" />
+      </div>
+      <div class="pubs-data">
+        <p class="title">
+          Towards Resilient Transportation: A Conditional Transformer for Accident-Informed Traffic Forecasting
+        </p>
+        <p class="authors">
+          Hongjun Wang, Jiawei Yong, Jiawei Wang, Shintaro Fukushima, Renhe Jiang
+        </p>
+        <p>
+          <span class="venue">SIGKDD 2026 Research Track (Accepted, Nov 2025 release)</span>
+          <span class="links">
+            <a href="https://openreview.net/forum?id=1000" target="_blank">OpenReview thread</a> |
+            <a href="https://openreview.net/pdf?id=1000" target="_blank">Download PDF</a>
+          </span>
+        </p>
+        <p class="summary">
+          We introduce ConFormer, a conditional transformer that fuses graph propagation with Guided Layer Normalization to dynamically adjust spatial-temporal relationships under incidents. The model ingests two enriched traffic datasets from Tokyo and California that align sensor feeds with accident and regulation records, enabling incident-aware forecasting.
+        </p>
+        <p class="summary">
+          <strong>Highlights.</strong> GLN modulates normalization, attention logits, and residuals with graph-diffused incident cues, leading to state-of-the-art accuracy while using fewer parameters than STAEFormer. Extensive ablations cover GLN vs. FiLM, feature-only vs. architecture-only gains, multi-incident robustness, sparsity stress tests, and cross-region transfer between Bay Area &lt;-&gt; San Diego as well as Tokyo urban &lt;-&gt; suburban deployments.
+        </p>
+        <p class="summary">
+          <strong>Review snapshot.</strong> Program Chairs issued an Accept decision after consistent positive scores (Novelty 2/4/3, Technical 3/3/3). Reviewer concerns on dataset alignment, statistical rigor, and scalability were resolved with multi-seed significance tests, detailed spatiotemporal join protocols, linear-attention baselines, and added sensitivity visualizations.
+        </p>
       </div>
     </div>
   </div>
